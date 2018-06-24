@@ -14,22 +14,22 @@ Mobile Chrome browser
 
 ## Infrastructures
 
-1. Client: Angular 5
-2. Server: Node.js
-3. Persistence: Firebase Document Database
-4. Authentication: Google Firebase authentication
+* Client: Angular 5
+* Server: Node.js
+* Persistence: Firebase Document Database
+* Authentication: Google Firebase authentication
 
 ## Features
 
-1. Publishing location based messages
-2. Publishing location based events
-3. Observing locations
-4. Explore location based messages and events
-5. Live Maps
+* Publishing location based messages
+* Publishing location based events
+* Observing locations
+* Explore location based messages and events
+* Live Maps
 
 ### Infrastructure: Firebase Document Database
 
-Firebase API abstraction layer
+> Firebase API abstraction layer
 
 #### Service
 
