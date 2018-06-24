@@ -1,27 +1,107 @@
-# LocationBasedSharing
+# Location Based Sharing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+ Publish your Messages, Events and more with people surround you
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Web Application experience runs at Chrome browser, Desktop and Mobile
+Some description…
 
-## Code scaffolding
+## Target Platform
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Desktop Chrome browser
+Mobile Chrome browser
 
-## Build
+## Infrastructures
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. Client: Angular 5
+2. Server: Node.js
+3. Persistence: Firebase Document Database
+4. Authentication: Google Firebase authentication
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Publishing location based messages
+2. Publishing location based events
+3. Observing locations
+4. Explore location based messages and events
+5. Live Maps
 
-## Running end-to-end tests
+### Infrastructure: Firebase Document Database
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Firebase API abstraction layer
 
-## Further help
+#### Service
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Get collection: Gets observable firebase collection
+Get document: Gets observable firebase document
+
+### Infrastructure: Google Firebase authentication
+
+Firebase Auth API abstraction layer, Login component and service
+
+#### View
+
+<pre>
+Login View:
+
+span Wellcome!
+button (click)=”login()”
+
+Logout View:
+
+img [ngModel]=”userPhotoUri”
+span {{userDisplayName}}
+button (click)=”logout()”
+</pre>
+
+#### Service
+
+1. Register user: creates new user profile
+2. Login:
+3. Logout:
+4. Current user:
+
+### Feature: Publishing location based messages
+
+#### View
+
+<pre>
+input type=”text” ([ngModel])=”message”
+input type=”text” ([ngModel])=”location”
+button (click)=”shareMessage()”
+</pre>
+
+#### Service
+
+Share message: Adds message to database
+
+
+### Feature: Publishing location based events
+
+#### View
+
+<pre>
+input type=”text” ([ngModel])=”title”
+input type=”multi line text” ([ngModel])=”description”
+input type=”text” ([ngModel])=”location”
+input type=”date” ([ngModel])=”date”
+button (click)=”shareEvent()”
+</pre>
+
+#### Service
+
+Share event: Adds event to database
+
+### Feature: Observing locations
+
+#### View
+
+<pre>
+input type=”text” ([ngModel])=”location”
+button (click)=”shareEvent()”
+</pre>
+
+#### Service
+
+Share event: Adds event to database
