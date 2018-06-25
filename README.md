@@ -5,7 +5,6 @@
 ## Description
 
 Web Application experience runs at Chrome browser, Desktop and Mobile
-Some description…
 
 ## Target Platform
 
@@ -14,9 +13,9 @@ Mobile Chrome browser
 
 ## Infrastructures
 
-* Client: Angular 5
-* Server: Node.js
-* Persistence: Firebase Document Database
+* Client: Angular 6
+* Server: Firebase Cloud Functions
+* Persistence: Firebase Realtime Document Database
 * Authentication: Google Firebase authentication
 
 ## Features
@@ -33,12 +32,12 @@ Mobile Chrome browser
 
 #### Service
 
-Get collection: Gets observable firebase collection
-Get document: Gets observable firebase document
+* Get collection: Gets observable firebase collection
+* Get document: Gets observable firebase document
 
 ### Infrastructure: Google Firebase authentication
 
-Firebase Auth API abstraction layer, Login component and service
+> Firebase Auth API abstraction layer, Login component and service
 
 #### View
 

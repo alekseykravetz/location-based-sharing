@@ -4,6 +4,8 @@ import { User } from 'firebase';
 import { Observable } from 'rxjs';
 import * as firebase from 'firebase';
 import { AccountService } from "src/app/account/account.service";
+import { DatabaseService } from "src/app/database/database.service";
+import { IMessage } from "src/app/models/message";
 
 @Component({
   selector: 'lbs-root',
@@ -11,10 +13,13 @@ import { AccountService } from "src/app/account/account.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  title = 'lbs';
 
-  constructor(private accountService: AccountService) {
+  messages$: Observable<IMessage[]>;
+
+  constructor(
+    private accountService: AccountService,
+    private dbService: DatabaseService) {
+
   }
 
   doLogin() {
@@ -23,5 +28,10 @@ export class AppComponent {
 
   doLogout() {
     this.accountService.logout();
+  }
+
+  createMessage() {
+    this.dbService.createMessage('test message');
+      this.messages$ = this.dbService.getMessages();
   }
 }

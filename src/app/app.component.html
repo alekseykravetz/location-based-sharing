@@ -1,3 +1,7 @@
 <button type="button" (click)="doLogin()">Login</button>
 <button type="button" (click)="doLogout()">Logout</button>
+<button type="button" (click)="createMessage()">Create Message</button>
+
+<li *ngFor="let message of messages$ | async">{{message.content}}</li>
+
 
