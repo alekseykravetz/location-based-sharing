@@ -6,6 +6,7 @@ import { AngularFireModule } from 'angularfire2';
 
 import { AccountModule } from 'src/app/account/account.module';
 import { DatabaseModule } from 'src/app/database/database.module';
+import { LocationExplorerModule } from "src/app/location-explorer/location-explorer.module";
 
 import { AppComponent } from './app.component';
 
@@ -18,6 +19,7 @@ import { AppComponent } from './app.component';
 
     AccountModule,
     DatabaseModule,
+    LocationExplorerModule,
     
     AngularFireModule.initializeApp(environment.firebase),
   ],

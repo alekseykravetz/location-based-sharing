@@ -14,8 +14,6 @@ import { IMessage } from "src/app/models/message";
 })
 export class AppComponent {
 
-  messages$: Observable<IMessage[]>;
-
   constructor(
     private accountService: AccountService,
     private dbService: DatabaseService) {
@@ -32,6 +30,5 @@ export class AppComponent {
 
   createMessage() {
     this.dbService.createMessage('test message');
-      this.messages$ = this.dbService.getMessages();
   }
 }
