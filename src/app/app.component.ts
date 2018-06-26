@@ -3,9 +3,9 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { User } from 'firebase';
 import { Observable } from 'rxjs';
 import * as firebase from 'firebase';
-import { AccountService } from "src/app/account/account.service";
-import { DatabaseService } from "src/app/database/database.service";
-import { IMessage } from "src/app/models/message";
+import { AccountService } from 'src/app/account/account.service';
+import { DatabaseService } from 'src/app/database/database.service';
+import { IMessage } from 'src/app/models/message';
 
 @Component({
   selector: 'lbs-root',

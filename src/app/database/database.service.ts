@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IMessage } from "src/app/models/message";
+import { IMessage } from 'src/app/models/message';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 
