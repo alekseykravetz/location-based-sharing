@@ -10,13 +10,18 @@ import { DatabaseModule } from 'src/app/database/database.module';
 import { LocationExplorerModule } from 'src/app/location-explorer/location-explorer.module';
 
 import { AppComponent } from './app.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
+
+    AppRoutingModule,
 
     AccountModule,
     DatabaseModule,

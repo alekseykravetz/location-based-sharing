@@ -1,10 +1,11 @@
 <lbs-app-shell>
     <div lbs-app-shell-navbar>
-        <button type="button" (click)="doLogin()">Login</button>
-        <button type="button" (click)="doLogout()">Logout</button>
+
+        <lbs-account></lbs-account>
+
         <button type="button" (click)="createMessage()">Create Message</button>
     </div>
-    <div lbs-app-shell-content>
-        <lbs-location-explorer></lbs-location-explorer>
+    <div lbs-app-shell-content style="height: 100%;">
+        <router-outlet></router-outlet>
     </div>
 </lbs-app-shell>

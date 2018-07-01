@@ -1,0 +1,9 @@
+<div *ngIf="user; else loggedOut" class="account-container">
+    <img src="user.photoURL" />
+    <span>{{user.displayName}}</span>
+    <button type="button" (click)="doLogout()">Logout</button>
+</div>
+
+<ng-template #loggedOut>
+        <button type="button" (click)="doLogin()">Login</button> 
+</ng-template>
