@@ -8,10 +8,12 @@ import { AngularFireModule } from 'angularfire2';
 import { AccountModule } from 'src/app/account/account.module';
 import { DatabaseModule } from 'src/app/database/database.module';
 import { LocationExplorerModule } from 'src/app/location-explorer/location-explorer.module';
+import { AppRoutingModule } from './app.routing';
+import { MessagePublisherModule } from 'src/app/message-publisher/message-publisher.module';
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { AppRoutingModule } from './app.routing';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { AppRoutingModule } from './app.routing';
     DatabaseModule,
     LocationExplorerModule,
     AppShellModule,
+    MessagePublisherModule,
 
     AngularFireModule.initializeApp(environment.firebase),
   ],

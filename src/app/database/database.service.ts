@@ -10,10 +10,10 @@ export class DatabaseService {
 
   constructor(private db: AngularFirestore) { }
 
-  createMessage(message) {
+  createMessage(message: IMessage) {
     console.log('createMessage()');
-    const id = this.db.createId();
-    this.db.collection<IMessage>('messages').add({ id: id, content: message });
+    message.id = this.db.createId();
+    this.db.collection<IMessage>('messages').add(message);
   }
 
   getMessages(): Observable<IMessage[]> {

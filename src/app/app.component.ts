@@ -27,8 +27,5 @@ export class AppComponent {
   doLogout() {
     this.accountService.logout();
   }
-
-  createMessage() {
-    this.dbService.createMessage('test message');
-  }
+  
 }
