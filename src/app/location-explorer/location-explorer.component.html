@@ -1,1 +1,5 @@
+<p>Messages: </p>
 <li *ngFor="let message of messages$ | async">content: {{message.content}} location:{{message.location}}</li>
+
+<p>Events: </p>
+<li *ngFor="let e of events$ | async">content: {{e.content}} location:{{e.location}}</li>

@@ -56,10 +56,9 @@ button (click)=”logout()”
 
 #### Service
 
-1. Register user: creates new user profile
-2. Login:
-3. Logout:
-4. Current user:
+1. Login (with Google account)
+2. Logout
+3. Current user
 
 ### Feature: Publishing location based messages
 
@@ -68,7 +67,7 @@ button (click)=”logout()”
 <pre>
 input type=”text” ([ngModel])=”message”
 input type=”text” ([ngModel])=”location”
-button (click)=”shareMessage()”
+button (click)=”publish()”
 </pre>
 
 #### Service
