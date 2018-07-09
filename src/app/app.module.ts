@@ -13,6 +13,7 @@ import { AccountModule } from 'src/app/account/account.module';
 import { LocationExplorerModule } from 'src/app/location-explorer/location-explorer.module';
 import { MessagePublisherModule } from 'src/app/message-publisher/message-publisher.module';
 import { EventPublisherModule } from 'src/app/event-publisher/event-publisher.module';
+import { MapModule } from 'src/app/map/map.module';
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -34,6 +35,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     LocationExplorerModule,
     MessagePublisherModule,
     EventPublisherModule,
+    MapModule,
 
     AngularFireModule.initializeApp(environment.firebase),
   ],
